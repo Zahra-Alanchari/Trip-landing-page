@@ -2,7 +2,8 @@
 import { useState } from "react";
 import direct from "../../../public/asset/mainLogo/direct.png";
 import successIcon from "../../../public/asset/Group 691.png";
-import Modal from "../Modal";
+// import Modal from "../Modal";
+import Modal from "../Modal/Index"
 
 const MainDirect = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
