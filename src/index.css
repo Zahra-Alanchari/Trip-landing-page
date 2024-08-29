@@ -1,0 +1,24 @@
+@font-face {
+  font-family: Vazir;
+  src: url("../public/vazir/Vazir-Regular.woff") format("woff2"),
+    url("../public/vazir/Vazir-Regular.woff2") format("woff"),
+    url("../public/vazir/Vazir-Regular.ttf") format("truetype");
+}
+:root {
+  font-family: "Vazir", sans-serif;
+
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #e1e1e1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
