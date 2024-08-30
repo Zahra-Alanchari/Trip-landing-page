@@ -1,9 +1,7 @@
-
 import { useState } from "react";
-import direct from "../../../public/asset/mainLogo/direct.png";
 import successIcon from "../../../public/asset/Group 691.png";
-// import Modal from "../Modal";
-import Modal from "../Modal/Index"
+import Modal from "../Modal/Index";
+import Direct from "../Icons/Direct";
 
 const MainDirect = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -17,22 +15,21 @@ const MainDirect = () => {
   };
 
   return (
-    <div>
-      <div className="flex flex-row items-center mb-[30px]">
+    <div className="text-[0.85rem] font-bold ">
+      <div className="flex flex-row items-center my-[13px] ">
         <div className="w-[30px] h-[30px] bg-[#6e6e87] shadow-[-5px_-5px_0_0_#262630] rounded-[6px] border border-[#777796] flex justify-center items-center ml-[15px] lg:w-[63px] lg:h-[63px] lg:shadow-[-13px_-13px_0_0_#262630] lg:rounded-[10px]">
-          <img src={direct} alt="test" className="lg:w-[29px] lg:h-[29px]" />
+          <Direct />
         </div>
-        <p className="font-bold lg:text-[1.5rem] lg:mr-[10px]">
+        <p className=" lg:text-[1.2rem] lg:mr-[10px]">
           تماس با شبکه زروان تریپ
         </p>
       </div>
-      <div className="lg:text-[1.5rem] lg:mb-[15px] mb-[20px]">
+      <div className="lg:text-[1rem] lg:mb-[25px] mb-[20px]">
         <span className="text-[#ff4500]">*</span> دوست داریم نظرات و پیشنهادات
         شما رو بشنویم پیامهایتان را با ما در میان بذارید.
       </div>
       <form>
-        <div className="flex flex-col lg:items-start lg:h-[554px] lg:flex-wrap lg:content-between">
-          {/* Inputs */}
+        <div className="text-[0.75rem] flex flex-col lg:items-start lg:h-[554px] lg:flex-wrap lg:content-between">
           <input
             type="text"
             placeholder="* موضوع مورد نظر خود را وارد نمایید"
@@ -42,7 +39,7 @@ const MainDirect = () => {
             type="text"
             placeholder="پرهام رحیمی"
             disabled
-            className="h-[50px] rounded-[10px] border-0 mb-[10px] placeholder:text-[#ff4500] bg-[#ff440024] border border-[#ff4500] lg:h-[90px] lg:w-1/3 lg:rounded-[18px] lg:mb-[17px]"
+            className="h-[50px] rounded-[10px] border-2 mb-[10px] placeholder:text-[#ff4500] placeholder:pr-[15px] bg-[#ff440024] border-[#ff4500] lg:h-[90px] lg:w-1/3 lg:rounded-[18px] lg:mb-[17px]"
           />
           <input
             type="text"
@@ -54,11 +51,12 @@ const MainDirect = () => {
             placeholder="* ایمیل خود را وارد نمایید"
             className="h-[50px] rounded-[10px] border-0 mb-[10px] placeholder:text-[#bababa] placeholder:pr-[15px] lg:h-[80px] lg:w-1/3 lg:rounded-[18px] lg:mb-[17px]"
           />
-          <input
+          <textarea
             type="textarea"
             placeholder="توضیحات خود را وارد نمایید..."
-            className="lg:order-1 h-[165px] rounded-[10px] border-0 mb-[10px] placeholder:text-[#bababa] lg:h-[385px] lg:w-3/5 lg:rounded-[20px]"
-          />
+            className="lg:order-1 h-[165px] rounded-[10px] border-0 mb-[10px] placeholder:text-[#bababa] placeholder:pr-[15px] lg:h-[385px] lg:w-3/5 lg:rounded-[20px]"
+          ></textarea>
+
           <button
             type="button"
             onClick={openModal}

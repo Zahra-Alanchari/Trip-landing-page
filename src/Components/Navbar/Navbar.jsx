@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="lg:flex lg:flex-col lg:items-center lg:justify-center lg:min-w-full lg:h-full lg:hidden">
         <NavBarLogo />
         <div className="flex justify-center relative -top-[25px]">
-          <div className="bg-white rounded-lg w-[343px] h-[53px] flex flex-row-reverse items-center justify-between">
+          <div className="bg-white rounded-lg w-[343px] h-full flex ">
             <NavbarIcons />
           </div>
         </div>

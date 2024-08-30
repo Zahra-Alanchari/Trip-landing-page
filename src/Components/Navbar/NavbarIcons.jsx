@@ -1,28 +1,20 @@
-import people from "../../../public/asset/navLogo/profile-2user.png";
-import calling from "../../../public/asset/navLogo/call-calling.png";
-import search from "../../../public/asset/navLogo/search-status.png";
-import category from "../../../public/asset/navLogo/category.png";
+import People from "../Icons/People";
+import Vector from "../Icons/Vector";
+import Text from "../Icons/Text";
+import Call from "../Icons/Call";
+import Category from "../Icons/Category";
 
 const NavbarIcons = () => {
   return (
-    <>
-      <div className="flex flex-row-reverse ml-[15px]">
-        <div className="w-[35px] h-[35px] bg-[#94949434] rounded-md mr-[15px] flex items-center justify-center">
-          <img src={people} alt="test" />
-        </div>
-
-        <div className="w-[35px] h-[35px] bg-[#94949434] rounded-md mr-[15px] flex items-center justify-center">
-          <img src={search} alt="test" />
-        </div>
-
-        <div className="w-[35px] h-[35px] bg-[#94949434] rounded-md mr-[15px] flex items-center justify-center">
-          <img src={calling} alt="test" />
-        </div>
+    <div className="flex flex-row-reverse justify-between w-full m-[10px]">
+      <div className="flex flex-row-reverse gap-2 items-center">
+        <People />
+        <Vector />
+        <Text />
+        <Call />
       </div>
-      <div className="w-[35px] h-[35px] bg-[#94949434] rounded-md mr-[15px] flex items-center justify-center">
-        <img src={category} alt="test" />
-      </div>
-    </>
+      <Category />
+    </div>
   );
 };
 

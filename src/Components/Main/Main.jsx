@@ -10,7 +10,7 @@ const Main = () => {
       <MainInfo />
 
       <MainSocial />
-      <div className=" w-[343px] h-[588px] my-[18px] lg:w-full lg:h-[689px] lg:my-[68px] lg:mb-[100px]">
+      <div className=" w-[343px] h-[588px] my-[18px] lg:w-full lg:h-[689px] lg:my-[40px] lg:mb-[100px]">
         <MainDirect />
       </div>
     </div>

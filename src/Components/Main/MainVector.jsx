@@ -9,7 +9,7 @@ const MainVector = () => {
   return (
     <div className="hidden w-full lg:block lg:relative  overflow-hidden">
       <img className="w-full" src={bg} alt="test" />
-      <h3 className="text-white text-[40px] absolute top-[40%] left-[45%]">
+      <h3 className="text-white text-[25px] absolute top-[40%] left-[45%]">
         تماس با زروان تریپ
       </h3>
       <img className=" absolute top-[20%] left-[43%]" src={icon1} alt="test" />
